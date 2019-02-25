@@ -2,6 +2,7 @@
 using System.Linq;
 using Algorithms.Arrays;
 using Algorithms.Iterations;
+using Algorithms.TimeComplexity;
 
 namespace Algorithms
 {
@@ -24,6 +25,11 @@ namespace Algorithms
             Console.WriteLine("--------------------------------------");
             var rotated = CyclicRotation.Rotate(new[] {3, 8, 9, 7, 6}, 3);
             Console.WriteLine(string.Join(",", rotated));
+            Console.WriteLine("--------------------------------------");
+
+            Console.WriteLine("Frog Jmp");
+            Console.WriteLine("--------------------------------------");
+            Console.WriteLine(FrogJmp.GetNumber(10, 85, 30));
             Console.WriteLine("--------------------------------------");
 
             Console.ReadLine();
